@@ -1,0 +1,138 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+} 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+table, tbody{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+body{
+	padding: 20px;
+
+}
+
+.container{
+	width: 100%;
+	border:1px solid #999999;
+	background: #eee;
+	border-radius: 10px;
+	padding: 20px;
+	display: -webkit-flex;
+	display: flex;
+}
+nav, section, aside{
+	margin-right: 20px;
+	border:1px solid #999;
+	background: white;
+	border-radius: 10px;
+	padding:20px;
+}
+nav{
+	width: 300px;
+	height: 310px;
+	padding:20px;
+	-webkit-flex:none;
+	flex: none;
+}
+section{
+	-webkit-flex:1;
+	flex: 1;
+	height: 600px;
+}
+aside{
+	width: 220px;
+	margin-right: 0;
+	-webkit-flex:none;
+	flex: none;
+}
+
+
+/*左侧栏样式*/
+nav div {
+    width: 260px;
+    height: 80px;
+}
+
+nav div img {
+    width: 100px;
+    height: 76px;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+	width: 260px;
+	height: 37px;
+	margin-bottom: 10px;
+	background: #4C9ED9;
+	text-align: center;
+}
+nav li a{
+	color: white;
+	line-height: 37px
+}
+
+/*中间栏的样式*/
+section h2{
+    font-size: 2.143rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    text-indent: 1em;
+}
+section p{
+	margin-bottom:24px;
+	font-size: 18px;
+	font-weight: 500;
+	color: gray; 
+}
+section table{
+	display: table;
+	margin:20px auto; 
+	border-style: solid;
+	clear: left;
+	background: #dde4e9;
+	border-collapse: separate;
+	padding: 12px 32px 12px 12px;
+	border-width: 0 0 0 5px;
+	border-color: #558abb;
+}
+section th, section td {
+	vertical-align: top;
+	min-width: 150px;
+	font-weight: 700;
+	border: solid #e0e0dc;
+	border-width: 0 1px 1px 0;
+	padding: 6px 8px;
+	text-align: left;
+	color: #217ac0;
+}
+.note{
+	background: #fff4cc;
+	border-color: #ffe070;
+    border-left-width: 5px;
+    border-left-style: solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 17px;
+    color: gray;
+}
+
+
+/*右侧的样式*/
+aside img{
+width: 155px;
+height: 155px;
+margin: 10px 13px;
+border-radius: 8px;
+overflow: hidden;
+}
