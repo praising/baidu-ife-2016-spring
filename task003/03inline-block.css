@@ -1,4 +1,4 @@
-﻿*{
+*{
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; 
 	-webkit-box-sizing:border-box;
@@ -21,37 +21,39 @@ body{
 
 }
 
-/*框架样式*/
 .container{
 	border:1px solid #999999;
 	background: #eee;
 	border-radius: 10px;
 	padding: 20px;
-	position: relative;
-	min-height: 800px;
+	font-size: 0;
+	letter-spacing: -4px;     /* 用于消除inline-block排列时中间的4px缝隙*/
+	min-width: 800px;
+}
+.container *{
+	font-size: 1rem;
+	letter-spacing: normal;
 }
 nav, section, aside{
-	margin-right: 20px;
+	display: inline-block;
+	vertical-align: top;    /* 前两行代码是为了使其成为inline-block元素*/
 	border:1px solid #999;
 	background: white;
 	border-radius: 10px;
+	margin-right: 20px; 
 	padding:20px;
 }
 nav{
 	width: 300px;
-	padding:20px;
-	position: absolute; /*这里因为有margin值可以不设置left和top，能做到自适应*/
+	height: 310px;
 }
 section{
-	margin-right: 240px;
-	margin-left: 320px;
+	height: 600px;
+	width: calc(100% - 560px);
 }
 aside{
 	width: 220px;
 	margin-right: 0;
-	position: absolute;
-	top: 20px;
-	right: 20px;
 }
 /*左侧栏样式*/
 nav div {

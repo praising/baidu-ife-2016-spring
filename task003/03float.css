@@ -1,4 +1,4 @@
-*{
+﻿*{
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; 
 	-webkit-box-sizing:border-box;
@@ -35,7 +35,6 @@ body{
 }
 /*框架样式*/
 .container{
-	width: 100%;
 	border:1px solid #999999;
 	background: #eee;
 	border-radius: 10px;
@@ -43,7 +42,6 @@ body{
 	min-width: 688px;
 }
 nav, section, aside{
-	display: inline-block;
 	margin-right: 20px;
 	border:1px solid #999;
 	background: white;
