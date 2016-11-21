@@ -21,7 +21,7 @@
 ### 浮动布局 ###
 css code如下：
 
-    /*框架样式*/
+    /*布局样式*/
 
     .clearfix{
     	overflow:auto;
@@ -140,7 +140,7 @@ css code如下：
 ### position定位布局 ###
 css code 如下：
 
-    /*框架样式*/
+    /*布局样式*/
 	.container{
 		border:1px solid #999999;
 		background: #eee;
