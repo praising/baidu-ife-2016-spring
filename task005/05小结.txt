@@ -1,0 +1,30 @@
+考虑极端情况
+使用position布局和float都可以
+float简单一些，右边栏代码放在中间栏前面，然后
+aside{
+    width: 355px;
+    float: right;
+}
+main{
+    margin-right: 420px; 
+}
+body{
+min-width：800px;}
+
+position布局，因为这里没有写容器，就是相对body啦
+aside{
+    width: 355px;
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+main{
+    margin-right: 420px; 
+}
+body{
+min-width：800px;
+position:relative;  不能少啊，少了极限状态会板块重叠很难看的。。。
+}
+
+发现大部分的作品都没考虑到文章中的图片随着左侧栏自适应宽度，图片宽度设置成百分比就好

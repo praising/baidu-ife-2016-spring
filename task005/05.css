@@ -1,0 +1,232 @@
+body {
+    background-color: #DEDEDE;
+    font-family: "Microsoft Yahei";
+    min-width: 720px;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/*首部样式*/
+
+header {
+    height: 60px;
+    background-color: #333;
+    padding: 15px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 60px;
+    background: url(../img/baidu.jpg) no-repeat;
+    overflow: hidden;
+}
+
+header ul {
+    float: right;
+    list-style: none;
+    counter-reset: count;
+}
+
+header li::before {
+    content: "● ";    /* 修改li标签前面的列表项图标，可换成其他图标*/
+    color: gray;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 10px
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+header li a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/*文章的样式*/
+
+article, .image, aside {
+    margin: 20px;
+    border: 1px solid #CBCBCB;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+    -webkit-transition:all 0.3s linear;
+}
+article:hover, .image:hover, aside:hover{
+    box-shadow: 0 0 10px #0ce;
+    -webkit-transition:all 0.2s linear;
+}
+
+article h2 {
+    color: #000;
+    font-size: 23px;
+}
+
+article h3 {
+    color: #636466;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.author {
+    color: #686A77;
+    font-size: 13px;
+    text-indent: 0;
+    margin-top: 0;
+}
+
+article p {
+    text-indent: 2em;
+    color: #000;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.liebiao {
+    list-style: none;
+    padding: 0 0 0 20px;
+}
+
+.liebiao li {
+    margin-bottom: 5px;
+}
+
+.pic{
+    width:40%;
+}
+figure {
+    display: inline-block;
+    width: 120px;
+    height: 130px;
+    border: 1px solid #CBCBCB;
+    text-align: center;
+    margin:10px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+figure img {
+    width: 102px;
+    height: 82px;
+}
+
+.ranke li {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border: 1px solid #CDCDCD;
+    height: 25px;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 10px
+}
+
+table td {
+    border: 1px solid #CDCDCD;
+    height: 25px;
+    font-size: 14px;
+    text-indent: 10px
+}
+
+.black {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+.grayback {
+    background: #CDCDCD;
+    font-weight: bold;
+}
+
+
+/*侧栏的样式*/
+
+aside h2 {
+    font-size: 18px;
+    border-left: 3px solid #CACACA;
+    text-indent: 10px;
+    line-height: 40px;
+    height: 40px
+}
+
+.width {
+    width: 40%;
+    text-align: right;
+    padding-bottom: 15px;
+    display: inline-block;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+form p {
+	margin: 0 0 25px calc(40% + 10px);   /*calc是css3中的一个属性，用于计算*/
+	font-weight: 600;
+    color: #989898;
+    font-size: 13px;
+}
+
+.button {
+    width: 100%;
+    border-radius: 10px;
+    background: #17A0ED;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    font-size: 17px;
+}
+.button:hover{
+	background: #3355D0;
+}
+
+/*底部的样式*/
+
+footer {
+    height: 75px;
+    color: white;
+    background: black;
+    text-align: center;
+    padding-top: 15px
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*布局样式*/
+aside{
+    width: 355px;
+    float: right;
+}
+main{
+    margin-right: 420px; 
+}
+
+
