@@ -1,0 +1,626 @@
+/*样式重置*/
+article,aside,footer,header,nav,section {
+  display: block;
+}
+body {
+  margin: 0;
+  min-width: 1280px;
+  background: #fff;
+  font-family: "微软雅黑";
+  font-size: 12px;
+}
+ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+a {
+  background-color: transparent; 
+  -webkit-text-decoration-skip: objects; 
+  text-decoration: none;
+}
+a:active,a:hover {
+  outline-width: 0; 
+  text-decoration: none;
+}
+img {
+  border-style: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*首尾样式*/
+header {
+	margin: 0;
+	height: 57px;
+	background: #fff;
+}
+.logo {
+	float: left;
+	display: block;
+	width: 75px;
+	height: 57px;
+	line-height: 57px;
+	margin-left: 53px;
+	padding-left: 45px;
+	background: url(../img/07/logos.png) no-repeat 5px 14px;
+	font-size: 21px;
+	font-family: "黑体";
+	text-align: left; 
+	color: #1D2620;
+}
+.nav {
+	float: right;
+	margin-right: 62px; 
+}
+.nav li {
+	display: inline-block;
+	float: left;
+	margin-right: 14px;
+}
+.nav a {
+	display: block;
+	width: 87px;
+	height: 55px;
+	font-size: 14px;
+	line-height: 57px;
+	text-align: center;
+	color: #787b83;	
+}
+.nav a:hover {
+	color: #E74F4D;
+	border-bottom: 2px solid #E74F4D;
+}
+.nav .home {
+	width: 66px;
+}
+.nav .denglu {
+	width: 37px;
+	padding-left: 15px;
+	background: url(../img/07/denglu.png) no-repeat 0 22px;
+	color: #E74F4D;
+}
+.nav .denglu:hover {
+	border-bottom: 0;
+}
+footer {
+	background: #2F2F38;
+	padding: 22px 38px 0 97px;
+	height: 31px;
+}
+footer span {
+	color: white;
+}
+
+/*主体样式*/
+.wrap{
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*主体第一块poster*/
+.poster{
+	height: 690px;
+	width: 100%;
+	position: relative;
+	background:url(../img/07/datu.png);
+	background-size: 100% auto;
+}
+.poster-con{
+	position: absolute;
+	top: 210px;
+	left: 8%;
+	width: 463px;
+	height: 290px;
+}
+.poster-con h1{
+	font-size: 60px;
+	color: #fff;
+	font-weight: normal;
+	margin: 0;
+	padding:0;
+}
+.poster-con p{
+	font-size: 21px;
+	line-height: 1.5;
+	margin:20px 152px 55px 10px; 
+	color: #FFFDFD;
+}
+.poster-con button{
+	width: 332px;
+	height:63px;
+	background: #E74F4D;
+	color: #fff;
+	font-size: 30px;
+	border: 0;
+	margin-left:10px;
+}
+
+/*主体第二块reason*/
+.reason{
+	height:251px ;
+}
+.reason li{
+	display: inline-block;
+	float: left;
+	width: 320px;
+	padding-top: 124px;
+	height: 127px;
+}
+.reason p{
+	margin: 0;
+	padding:0;
+	height: 52px;
+	border-right: 2px solid #AAA;
+}
+.reason span{
+	display:block;
+	margin: 0 auto;
+	width: 166px;
+	height: 36px;
+	font-size: 14px;
+	font-family: "黑体";
+	text-align: center;
+	color: #767777;
+	line-height: 18px;
+}
+.yuan{
+	background: url(../img/07/yuan.png) no-repeat 137px 45px;
+}
+.qi{
+	background: url(../img/07/qi.png) no-repeat 137px 45px;
+}
+.hua{
+	background: url(../img/07/hua.png) no-repeat 137px 45px;
+}
+.fangge{
+	background: url(../img/07/fangge.png) no-repeat 137px 45px;
+}
+
+/*主体第三块about*/
+.about{
+	height: 272px;
+	background: #EDEDED;
+	padding-top: 88px;
+}
+.biglogo{
+	display: block;
+	margin: 0 auto;
+}
+.about h1{
+	margin:0 auto;
+	font-size:53.59px;
+	color: #A1A1A1;
+	font-weight: normal;
+	width: 865px;
+	margin-top:45px; 
+}
+
+/*主体之城市活动*/
+.city{
+	height: 292px;
+	background: url(../img/07/ditu.png) ;
+	background-size: 100% 340px;
+	padding-top: 47px;
+	text-align: center;
+	color: white;
+}
+.city h2{
+	margin: 0;
+	text-align: center;
+	font-size: 21px;
+	line-height: 31px;
+	font-weight: normal;
+}
+.city p{
+	margin: 17px 0 51px -2px;
+}
+.city form{
+	text-align: center;
+	font-size: 0;
+	margin:0 auto;
+}
+.city select{
+	display: inline-block;
+	width: 240px;
+	height: 34px;
+	margin-right: 25px;
+	border:1px solid #D6C0BF ;
+	padding-right: 10px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	background:#fff url(../img/07/sele.png) no-repeat;  /*Adds background-image*/
+	background-position: 210px 7px;  /*Position of the background-image*/
+	text-indent: 0.01px; /* Removes default arrow from firefox*/
+	text-overflow: ""; 
+	text-indent: 5px;
+	color: #808081;
+}
+.btn{
+	display: inline-block;
+	width: 240px;
+	height: 36px;
+	background: #BE4F48;
+	border:0;
+	color: white;
+	letter-spacing: 30px;
+	font-size: 16px;
+	padding-left: 25px;
+}
+/*主体第五块activity*/
+.activity {
+	height: 605px;
+	box-sizing: border-box;
+	background:#F8F8F8;
+	text-align: center;
+	padding-top: 100px;
+	font-size: 0;
+}
+.activity li{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+.activity img{
+	border:1px solid #e1dedc;
+	padding:10px;
+	background: #fff;
+}
+.activity p{
+	font-size: 14px;
+	color: #44403F;
+}
+.activity span{
+	display: block;
+	color:#B3AFAC;
+	font-size: 12px;
+}
+.activity .special{
+	font-size: 24px;
+	letter-spacing: 30px;
+	text-indent: 30px;
+}
+
+
+
+/*主体部分新世界*/
+.wleft{
+	height: 566px;
+	width: 851px;
+	float: left;
+	background: url(../img/07/world.png);
+	position: relative;
+}
+.w-text{
+	width: 375px;
+	margin: 0 auto;
+	padding-top: 121px;
+	color: white;
+	text-align: center;
+}
+.w-text h2{
+	font-size: 50px;
+	margin: 0;
+	font-weight: normal;
+}
+.w-text span{
+	display: block;
+	font-size: 158px;	
+	font-weight: normal;
+	line-height: 124px;
+	margin-bottom: 27px;
+}
+.w-text p{
+	font-size: 22px;
+	line-height: 43px;
+	margin:0;
+}
+.wold-tgl{
+	width: 0;
+	height: 0;
+	 border-top: 15px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 268px;
+    right: 0;
+}
+.wright{
+	width: 426px;
+	height: 566px;
+	float: right;
+	text-align: center;
+}
+.world-item{
+	width: 299px;
+	margin: 0 auto;
+	padding-top: 136px;
+}
+.world-item h1{
+	font-size: 21.93px;
+	line-height: 43px;
+	font-weight: normal;
+}
+.world-item p{
+	line-height: 30px;
+	text-align: left;
+}
+.world-item button{
+	width: 106px;
+	height: 33px;
+	border:1px solid #E74F4D;
+	color: #E74F4D;
+	background: white;
+	margin-top:26px; 
+}
+.dot{
+	width: 100px;
+	margin-left: 183px;
+	margin-top: 26px;
+}
+.dot li{
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+	border-radius: 100%;
+	border:1px solid #929293;
+}
+.active{
+	background:#929293;
+}
+
+/*主体部分新时代部分*/
+.times li{
+	display: inline-block;
+	float: left;
+	width: 426px;
+	height: 349px;
+	padding-top: 172px;
+	text-align: center;
+
+}
+.times h2{
+	font-size: 21px;
+	font-family: "黑体";
+	font-weight: normal;
+	text-align: center;
+	line-height: 30px;
+	margin: 0;
+
+}
+.times hr{
+	margin-top: 27px;
+	margin-bottom: 27px;
+}
+.times button{
+	width: 168px;
+	height: 40px;
+	border: 1px solid #E7504D;
+	text-align: center;
+	font-size: 21px;
+	font-family: "黑体";
+	color: #E7504D;
+}
+.times-left{
+	background: #E7504D;
+	color: white;
+}
+.times-left hr{
+	border-color: white;
+}
+.times-con hr{
+	border-color: #C5C5C5;
+}
+.times-left button{
+	background: #E7504D;
+	color: white;
+	border-color: white;
+}
+.times-con button{
+	background: white;
+}
+.times .times-right{
+	padding-top: 0;
+	position: relative;
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 30px solid white;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	top:200px ;
+	left: 0;
+}
+.cover{
+	width: 430px;
+	height: 521px;
+	background: #9A9999;
+	opacity: .4;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*主体部分志愿者部分*/
+.volunteer{
+	height: 638px;
+}
+.up{
+	width: 435px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 103px;
+}
+.up h2{
+	margin: 112px 0 0 0;
+	text-align: center;
+	font-size:21px ;
+	font-family: "黑体";
+	line-height: 30px;
+}
+.line{
+	width: 30px;
+	height: 3px;
+	border: none;
+	border-top: 3px solid #E7504D;
+}
+.up p{
+	text-align: center;
+	line-height: 18px;
+	color: #AAAAAA;
+
+}
+.down{
+	width: 1040px;
+	margin: 0 auto;
+}
+.ask{
+	float: left;
+	width: 294px;
+	
+}
+.ask li{
+	margin-bottom: 20px;
+}
+.ask h2{
+	font-size: 14px;
+	color: #818181;
+	margin:0;
+}
+.ask p{
+	color: #9D9B9A;
+	margin: 24px 0 0 0 ;
+}
+.ask span{
+	display: block;
+	text-align: right;
+	color: #959291;
+	margin-right: 10px;
+	margin-top: 11px;
+}
+.list{
+	float: right;
+	width: 666px;
+}
+.form-item{
+	display: inline-block;
+	float: left;
+	margin:0 16px 15px 0;
+	width: 311px;
+	height: 38px;
+	background: #EDEDEF;
+	border: 0;
+	text-indent: 15px;
+}
+.list placeholder{
+	color: #6C6868;
+	font-family: "宋体";
+}
+.list textarea{
+	width: 642px;
+	height: 110px;
+	background:#EDEDEF;
+	border: 0;
+	text-indent: 15px;
+	padding-top: 8px; 
+}
+.list button{
+	display: block;
+	width: 642px;
+	height: 40px;
+	text-align: center;
+	margin-top: 15px;
+	color: #323333;
+	font-size: 14px;
+	font-family: "黑体";
+	border: 0;
+}
+
+/*中间栏的联系我们*/
+.mail{
+	height: 362px;
+	background: #33363F;
+}
+.mailcon{
+	width: 512px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+.mailcon h2{
+	margin: 0;
+	padding:80px 0 0 0;
+	font-size: 21px;
+	font-weight: normal;
+	font-family: "黑体";
+	line-height: 40px;
+}
+.mailcon p{
+	margin: 0 0 30px 0;
+	padding: 0 20px;
+}
+.mailcon form{
+	font-size: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+.mail_text {
+	width: 431px;
+	height: 34px;
+	text-indent: 10px;
+}
+.mailcon button{
+	width: 80px;
+	height: 40px;
+	background: #707278;
+	border: 1px solid #51545B;
+	color: #E7E7E8;
+	font-size: 15px;
+	vertical-align: top;
+	margin-left:-1px; 
+}
+.mailcon ul{
+	margin: 0 auto;
+	width: 220px;
+}
+.mailcon li{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+.mailcon a{
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+.QQ{
+	background: url(../img/07/03.png) no-repeat 5px 5px;
+}
+.xinlang{
+	background: url(../img/07/04.png) no-repeat 5px 5px;
+}
+.twitter{
+	background: url(../img/07/02.png) no-repeat 5px 5px;
+}
+.hole{
+	background: url(../img/07/01.png) no-repeat 5px 5px;
+}

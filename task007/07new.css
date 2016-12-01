@@ -1,0 +1,620 @@
+/*部分基本样式重置*/
+footer,header,nav,section {
+  display: block;
+}
+ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+p, h1, h2 {
+	margin: 0;
+	padding:0;
+	font-weight: normal;
+}
+a {
+  background-color: transparent; 
+  -webkit-text-decoration-skip: objects; 
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline-width: 0; 
+  text-decoration: none;
+}
+img {
+  border-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+/*网页样式*/
+body {
+	margin: 0;
+	padding:0;
+	min-width: 1280px;
+	font:12px/1.5 "Microsoft YaHei";
+	background:#fff; 
+}
+
+/*头部样式*/
+header {
+	height: 57px;
+	padding: 0 4%; 
+}
+.logo {	
+	display: inline-block;
+	width: 105px;
+	height: 57px;
+	line-height: 57px;
+	font-size:21px;
+	color: #1d2620;
+}
+.logo img {
+	width: 31px;
+	height: 31px;
+	vertical-align: text-bottom;
+}
+header ul {
+	float: right;
+}
+header li {
+	float: left;
+	margin-right: 14px;
+}
+header li a {
+	display: block;
+	padding: 0 15px;
+	height: 55px;
+	font-size: 14px;
+	line-height: 57px;
+	text-align: center;
+	color: #787b83;
+}
+header li a:hover {
+	border-bottom: 2px solid #EF4F4D;
+	color: #EF4F4D;
+}
+.login {
+	text-indent: 5px;
+	background: url(../img/07/result.png) no-repeat 0 -159px;
+	color: #EF4F4D;
+}
+.login:hover{
+	border:0;
+}
+
+/*主体part1*/
+.part1 {
+	position: relative;
+	height: 690px;
+	background: url(../img/07/datu.png) no-repeat;
+	background-size: cover; 
+}
+.part1-con {
+	position: absolute;
+	top: 210px;
+	left: 8%;
+	width: 463px;
+	height: 290px;
+	color: #FFF;
+}
+.part1-con h1 {
+	font-size: 60px;
+}
+.part1-con p {
+	font-size: 21px;
+	margin: 20px 152px 55px 10px;
+}
+.part1-con button {
+	margin-left:10px;
+	width: 332px;
+	height:63px;
+	border: 0;
+	font-size: 30px;
+	background: #E74F4D;
+	color: #fff;	
+}
+
+/*主体四大理由*/
+.part2 {
+	height:251px;
+	font-size: 0;
+}
+.part2 li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+	height: 127px;
+}
+.part2 i{
+	display: block;
+	margin: 45px auto;
+	width: 45px;
+	height: 45px;
+}
+.part2 li:nth-child(4) i{
+	background: url(../img/07/result.png) no-repeat 0 -217px;
+}
+.part2 li:nth-child(3) i{
+	background: url(../img/07/vresult.png) no-repeat 0 -277px;
+}
+.part2 li:nth-child(2) i{
+	background: url(../img/07/result.png) no-repeat 0 -337px;
+}
+.part2 li:nth-child(1) i{
+	background: url(../img/07/result.png) no-repeat 0 -397px;
+}
+.part2 li:last-child p{
+	border-right: 0;
+}
+.part2 p{
+	height: 52px;
+	border-right: 2px solid #AAA;
+	text-align: center;
+	font:14px/18px "Heiti";
+	color: #767777;
+}
+
+/*主体第三部分*/
+.part3{
+	height: 272px;
+	background: #EDEDED;
+	padding-top: 99px;
+}
+.part3 img{
+	display: block;
+	margin: 0 auto 45px;
+	width: 92px;
+	height: 92px;
+}
+.part3 h1{
+	text-align: center;
+	font-size:53.59px;
+	color: #A1A1A1;	
+}
+
+/*主题城市选择*/
+.part4{
+	position: relative;
+	height: 292px;
+	padding-top: 47px;
+	background: url(../img/07/ditu.png) no-repeat;
+	background-size: 100% 340px;
+	text-align: center;
+	color: #fff;
+}
+.part4 h2{
+	font-size: 21px;
+	line-height: 31px;
+	text-align: center;
+}
+.part4 p{
+	margin: 17px 0 51px -2px;
+}
+.select{
+	font-size: 0;
+	position: relative;
+	width: 1155px;
+	margin:0 auto;
+}
+.part4 form {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	
+}
+.part4 select, .part4 input{
+	margin-right:47px;
+	width: 200px; 
+
+}
+.select-item, .btn, select, input {
+	display: inline-block;
+	vertical-align: middle;	
+	width: 240px;
+	height: 34px;	
+}
+.select-item {
+	margin-right: 25px;
+	padding: 0 10px;
+	background:#fff;
+	border:1px solid #BE4E48;
+	font:12px/34px "SimSun";
+	color: #808081;
+	text-align: left;
+}
+.btn {
+	padding-left: 25px;
+	border:0;
+	font-size: 16px;
+	background: #BE4F48;
+	color: #fff;
+	letter-spacing: 30px;
+}
+.select-item i{
+	width: 20px;
+	height: 20px;
+	margin-top: 7px;
+	background:url(../img/07/result.png) no-repeat -1px -458px;
+}
+.select-item ul{
+	width: 260px;
+	margin-left: -11px;
+	
+	border:1px solid #BE4E48;
+	background-color: #E3E3E4;
+}
+.select-item li{
+	padding-left: 30px;	
+}
+.select-item li:hover {
+	background: #BE4F48 url(../img/07/gou.png) no-repeat 7px 7px;
+	color: #fff;
+}
+
+/*主题城市活动*/
+.activity {
+	height: 605px;
+	box-sizing: border-box;
+	background:#F8F8F8;
+	text-align: center;
+	padding-top: 100px;
+	font-size: 0;
+}
+.activity li{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+.activity img{
+	border:1px solid #e1dedc;
+	padding:10px;
+	background: #fff;
+}
+.activity p{
+	font-size: 14px;
+	color: #44403F;
+}
+.activity span{
+	display: block;
+	color:#B3AFAC;
+	font-size: 12px;
+}
+.activity .special{
+	font-size: 24px;
+	letter-spacing: 30px;
+	text-indent: 30px;
+}
+/*主体新世界部分*/
+.part6, .part7 ul{
+	display: -webkit-flex;
+	display: flex;
+}
+.pleft{
+	flex: 2;
+	position: relative;
+	height: 566px;
+	background: url(../img/07/world.png) no-repeat;
+	background-size: cover; 	
+}
+.p-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+}
+.p-text h2{
+	font-size: 50px;
+}
+.p-text span{
+	display: block;
+	font-size: 158px;
+	line-height: 124px;
+	margin-bottom: 27px;
+}
+.p-text p{
+	font-size: 22px;
+	line-height: 43px;
+}
+.trigon{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 268px;
+    right: 0;
+}
+.pright{
+	flex: 1;
+	height: 566px;
+	text-align: center;
+}
+.world-item{
+	width: 299px;
+	margin: 0 auto;
+	padding-top: 136px;
+}
+.world-item h1{
+	font-size: 21.93px;
+	line-height: 43px;
+}
+.world-item p{
+	line-height: 30px;
+	text-align: left;
+}
+.world-item button{
+	width: 106px;
+	height: 33px;
+	border:1px solid #E74F4D;
+	color: #E74F4D;
+	background: white;
+	margin-top:26px; 
+}
+.dot{
+	margin: 26px auto 0;
+	padding-left:20px; 
+	width: 106px;
+	font-size: 0;
+}
+.dot li{
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	margin-right: 16px;
+	border-radius: 100%;
+	border:1px solid #929293;
+}
+.dot li:hover, .active{
+	background:#929293;
+}
+/*主体新时代*/
+.part7 li{
+	display: -webkit-flex;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 600px;
+}
+.part7 h2{
+	font:21px/30px "Heiti";
+	text-align: center;
+	line-height: 30px;
+}
+.part7 hr{
+	margin-top: 27px;
+	margin-bottom: 27px;
+}
+.line{
+	width: 30px;
+	height: 3px;
+	border: none;
+	border-top: 3px solid #E7504D;
+}
+.part7 button{
+	width: 168px;
+	height: 40px;
+	border: 1px solid #E7504D;
+	text-align: center;
+	font:21px/ "Heiti";
+	color: #E7504D;
+}
+.times-left{
+	background: #E7504D;
+	color: white;
+}
+.times-left hr{
+	border-color: white;
+}
+.times-con hr{
+	border-color: #C5C5C5;
+}
+.times-left button{
+	background: #E7504D;
+	color: white;
+	border-color: white;
+}
+.times-con button{
+	background: white;
+}
+.times-right {
+	background: url(../img/07/times.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 30px solid white;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	top:200px ;
+	left: 0;
+}
+
+/*主体部分志愿者*/
+.part8{
+	height: 638px;
+}
+.up{
+	width: 435px;
+	margin: 112px auto 103px;
+	text-align: center;
+}
+.up h2{
+	text-align: center;
+	font:21px/30px "Heiti";
+}
+.line{
+	width: 30px;
+	height: 3px;
+	border: none;
+	border-top: 3px solid #E7504D;
+}
+.up p{
+	text-align: center;
+	line-height: 18px;
+	color: #AAAAAA;
+}
+.down{
+	margin: 0 auto;
+	width: 78.35%;
+}
+.ask{
+	float: left;
+	width: 29.11%;
+}
+.ask li{
+	margin-bottom: 20px;
+}
+.ask h2{
+	font-size: 14px;
+	color: #231815;
+}
+.ask p{
+	margin: 21px 0 0 0 ;
+	color: #9D9B9A;	
+}
+.ask span{
+	display: block;
+	margin-right: 5px;
+	margin-top: 5px;
+	text-align: right;
+	color: #959291;
+}
+.list{
+	float: right;
+	width: 63%;
+}
+.list input[type="text"]{
+	display: inline-block;
+	margin-bottom: 15px;
+	width: calc(50% - 8px);
+	height: 38px;
+	background: #EDEDEF;
+	border: 0;
+	text-indent: 15px;
+}
+.list placeholder{
+	color: #6C6868;
+	font-family: "宋体";
+}
+.list textarea {
+	width: 100%;
+	height: 110px;
+	padding-top: 8px; 
+	border: 0;
+	background:#EDEDEF;
+	text-indent: 15px;	
+}
+.list button{
+	display: block;
+	margin-top: 15px;
+	width: 100%;
+	height: 40px;
+	border: 0;
+	font: 14px "Heiti";	
+	text-align: center;
+	color: #323333;	
+}
+
+/*中间栏的联系我们*/
+.part9{
+	height: 362px;
+	background: #33363F;
+}
+.mailcon{
+	width: 512px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+.mailcon h2{
+	padding:80px 0 0 0;
+	font:21px/40px "Heiti";
+}
+.mailcon p{
+	margin: 0 0 30px 0;
+	padding: 0 20px;
+}
+.mailcon form{
+	font-size: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+.mail_text {
+	width: 431px;
+	height: 34px;
+	text-indent: 10px;
+}
+.mailcon button{
+	width: 80px;
+	height: 40px;
+	background: #707278;
+	border: 1px solid #51545B;
+	color: #E7E7E8;
+	font-size: 15px;
+	vertical-align: top;
+	margin-left:-1px; 
+}
+.mailcon ul{
+	margin: 0 auto;
+	width: 220px;
+}
+.mailcon li{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+.mailcon a{
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+.part9 li:nth-child(4){
+	background: url(../img/07/result.png) no-repeat 5px 5px;
+}
+.part9 li:nth-child(3){
+	background: url(../img/07/result.png) no-repeat 5px -40px;
+}
+.part9 li:nth-child(1){
+	background: url(../img/07/result.png) no-repeat 0px -85px;
+}
+.part9 li:nth-child(2){
+	background: url(../img/07/result.png) no-repeat 0px -130px;
+}
+
+/*尾部*/
+footer {
+	background: #2F2F38;
+	padding: 22px 38px 0 97px;
+	height: 31px;
+}
+footer span {
+	color: white;
+}
