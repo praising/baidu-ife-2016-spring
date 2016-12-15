@@ -663,7 +663,7 @@ button:hover{
 	vertical-align: middle;
 	margin-right: 3px;
 	height: 23px;
-	border-color: #CACBCB;
+	border:1px solid #CACBCB;
 }
 .cal-selct select:nth-child(1){
 	width: 65px;	
@@ -675,6 +675,8 @@ button:hover{
 	width: 76px;
 }
 .cal-selct input{
+	display: inline-block;
+	vertical-align: middle;
 	width: 65px;
 	height: 22px;
 	border:1px solid #CACBCB;
