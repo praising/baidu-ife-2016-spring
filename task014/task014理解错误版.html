@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+	<li>1级（0-50）
+		<ul id="list-1">
+			
+		</ul>
+	</li>
+	<li>2级（50-200）
+		<ul id="list-2">
+			
+		</ul>
+	</li>
+	<li>3级（200-300）
+		<ul id="list-3">
+			
+		</ul>
+	</li>
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100],
+  ["重庆", 150],
+  ["安康", 180],
+  ["中山", 130],
+  ["清远", 50],
+  ["香港", 270],
+  ["台湾", 300]
+];
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+
+	思路：创建3个数组，遍历数组后分别放在3个数组中，然后在分别展示3个数组中的内容
+ */
+  var i=0;
+  var $=function(id){
+  	return document.getElementById(id);
+  };
+ for(i=0;i<aqiData.length;i++){
+ 	if(aqiData[i][1]>0 && aqiData[i][1]<=50 ){
+ 		$("list-1").innerHTML+="<li>"+aqiData[i][0]+","+aqiData[i][1]+"</li>";
+ 	}
+ 	else if(aqiData[i][1]>50 && aqiData[i][1]<=200 ){
+ 		$("list-2").innerHTML+="<li>"+aqiData[i][0]+","+aqiData[i][1]+"</li>";
+ 	}
+ 	else if(aqiData[i][1]>200 && aqiData[i][1]<=300){
+ 		$("list-3").innerHTML+="<li>"+aqiData[i][0]+","+aqiData[i][1]+"</li>";
+ 	}
+ }
+
+})();
+
+</script>
+</body>
+</html>

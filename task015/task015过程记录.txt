@@ -1,0 +1,45 @@
+1、整理思路（10:25）
+书写3个函数：
+getData() （11:33搞定）
+	疑惑点：
+	1、js高级选择器的应用  
+
+	2、二维数组的创建和输入
+
+	3、拿到li的值后，如何只把文本提炼出来？
+
+sortAqiData(aqiData)（出现有相等数据的时候排序错乱的情况）
+render(data)
+
+
+
+学习点：
+1、只拿到标签内的文本
+使用oli[i].firstChild.nodeValue，可以拿到标签的第一个文本字段，返回类型是字符串类型
+
+2、只拿到标签文本中的部分内容；
+如果文本是字符串可以应用str.slice(beginSlice[, endSlice])函数，
+该函数的作用在于，从字符串的指定位置开始提取字符串到指定位置结束，并返回这个新字符串
+
+3、出现有相等数据的时候排序错乱的情况（14:15解决）
+问题产生的原因不明，只知道sort()排序是按照ascII码值进行排序的。
+对于sort（）函数的理解不恰当，sort函数对二维数组进行排序的时候，请参照
+http://www.jb51.net/article/46162.htm 这里面有详细的记录，以及原理的解答
+
+4、对于小写数字转化成大写数字的问题（14:44 耗时30min，未解决）
+没写很多问题，看看别人有什么好的解决方式；
+
+5、查看别人的代码总结（）
+getData()中优秀的写法：
+
+  var ul = document.getElementById("source");
+  var data = [];
+        for (var i = 0; i < ul.childElementCount; i++) {
+            var li = ul.children[i];
+            var strCity = li.innerHTML.split("空气质量：")[0];
+            var num = Number(li.children[0].innerHTML);
+            data.push([strCity, num]);
+        }
+
+childElementCount 是元素所有子元素的所有数量，不是所有子节点的数量，在这里应该是：7，
+childElementCount属性的运行结果与element.children.length的结果等同。
