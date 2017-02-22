@@ -1,0 +1,17 @@
+
+1 header section section section footer
+
+首部通篇采用的是：position定位 线使用的hr，设置的样式
+第一块：全为position定位，左侧双图覆盖，透明度使用的是opcity、右侧也是定位直接固定元素位置，是用img而不是背景图，右侧的不同文本全部用p标签表现，700没有倾斜
+第二块分了4部分，3+最后的what部分。采用flaot：left布局但是父元素未清浮动，文章中文字样式都没有调整，what----40%，中间----是文本输出，未用css
+第三块采用的是float浮动布局，分左右两部分；左边标题直接使用p输出，首个单词用标签p包裹然后输出
+左边亮点在冒号采用的浮动+margin解决的位置问题，我上面部分采用的ul li因为设置了li的宽度，导致三角形的长度问题。
+最大的缺点是，通篇没有清浮动
+
+
+2、top-box  main-box  footer-box main-box分为上下两部分
+top:float 布局，使用overflow：hidden清浮动，左侧使用line-height使文字居下，右侧使用margin-top解决。
+
+中部分成上下两部分，上部分又分成左右两部分，把大图和文章归在一侧，使用float布局
+左右侧的内容里面使用定位解决了红绿图罩和右侧字母的位置情况，文章部分它使用dldtdd我使用的ulli
+使用filter: alpha(opacity:50);解决了透明度兼容性问题
